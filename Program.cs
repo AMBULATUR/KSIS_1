@@ -165,7 +165,7 @@ namespace KSIS_1
                         IPSegment ip = new IPSegment(Convert.ToString(adapter.GetIPProperties().DnsAddresses[0]), Convert.ToString(adapter.GetIPProperties().UnicastAddresses[1].IPv4Mask));
                         foreach (var host in ip.Hosts()) //Прозвон через ARP? 
                         {
-                           Task.Run(()=> SendARP(ConvertStringIPToIn32(host.ToIpString()), UnicastIP, Mac, ref MacLen));
+                       //    Task.Run(()=> SendARP(ConvertStringIPToIn32(host.ToIpString()), UnicastIP, Mac, ref MacLen));
                         }
                         
                     }
