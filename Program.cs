@@ -141,8 +141,9 @@ namespace KSIS_1
             foreach (NetworkInterface adapter in nics)
             {
                 if (adapter.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 || adapter.NetworkInterfaceType == NetworkInterfaceType.Ethernet)
-                    if (adapter.OperationalStatus == OperationalStatus.Up)
+                    //if (adapter.OperationalStatus == OperationalStatus.Up)
                     {
+
                         var output = string.Join(":", Enumerable.Range(0, 6).Select(i => adapter.GetPhysicalAddress().ToString().Substring(i * 2, 2)));
                         Console.WriteLine();
                         Console.WriteLine(adapter.Description);
@@ -163,11 +164,12 @@ namespace KSIS_1
                         var UnicastIP = ConvertIPToInt32(adapter.GetIPProperties().UnicastAddresses[1].Address);
 
                         IPSegment ip = new IPSegment(Convert.ToString(adapter.GetIPProperties().DnsAddresses[0]), Convert.ToString(adapter.GetIPProperties().UnicastAddresses[1].IPv4Mask));
+                        List<Task> Tasks = new List<Task>();
                         foreach (var host in ip.Hosts()) //Прозвон через ARP? 
                         {
-                       //    Task.Run(()=> SendARP(ConvertStringIPToIn32(host.ToIpString()), UnicastIP, Mac, ref MacLen));
+                         //Tasks.Add(Task.Run(()=> SendARP(ConvertStringIPToIn32(host.ToIpString()), UnicastIP, Mac, ref MacLen)));
                         }
-                        
+                        //Task.WaitAll(Tasks.ToArray());
                     }
             }
 
