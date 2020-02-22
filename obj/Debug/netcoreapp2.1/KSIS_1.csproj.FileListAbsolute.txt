@@ -1,0 +1,10 @@
+D:\БГУИР\KSIS\KSIS_1\bin\Debug\netcoreapp2.1\KSIS_1.deps.json
+D:\БГУИР\KSIS\KSIS_1\bin\Debug\netcoreapp2.1\KSIS_1.runtimeconfig.json
+D:\БГУИР\KSIS\KSIS_1\bin\Debug\netcoreapp2.1\KSIS_1.runtimeconfig.dev.json
+D:\БГУИР\KSIS\KSIS_1\bin\Debug\netcoreapp2.1\KSIS_1.dll
+D:\БГУИР\KSIS\KSIS_1\bin\Debug\netcoreapp2.1\KSIS_1.pdb
+D:\БГУИР\KSIS\KSIS_1\obj\Debug\netcoreapp2.1\KSIS_1.csprojAssemblyReference.cache
+D:\БГУИР\KSIS\KSIS_1\obj\Debug\netcoreapp2.1\KSIS_1.AssemblyInfoInputs.cache
+D:\БГУИР\KSIS\KSIS_1\obj\Debug\netcoreapp2.1\KSIS_1.AssemblyInfo.cs
+D:\БГУИР\KSIS\KSIS_1\obj\Debug\netcoreapp2.1\KSIS_1.dll
+D:\БГУИР\KSIS\KSIS_1\obj\Debug\netcoreapp2.1\KSIS_1.pdb
